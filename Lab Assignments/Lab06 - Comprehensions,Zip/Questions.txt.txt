@@ -1,0 +1,61 @@
+1) Create a text file containing lot of numbers in float form. The numbers may be on separate lines and there may be several numbers on same line as well.
+We have to read this file, and generate a list by comprehension that contains all the float values as elements.
+After the data has been loaded, display the total number of values and the maximum/minimum and average values.
+
+2) We have a CSV file of following format:
+rollno, name, marks1, marks2, marks3
+Make this CSV file before attempting this solution, with at least 8-10 rows of student data as above
+
+We have to build a dictionary using comprehension that should have rollno as key and the average marks as the value.
+Note that when you read a file the data would come as strings, so appropriate mathematical conversion may be needed.
+
+3) We have a text file of following format:
+
+yyyymmdd,10.5, 12.5, 22.4,30.4, 23.7
+
+yyyymmdd,11.5, 22.5, 21.4, 35.4, 25.7, 12.5, 13.9, 14.9
+
+So each line has date and temperatures separated by space.
+Temperatures count may vary between line to line. So one line may have 5 temperatures and another line may have more or less.
+Temperatures are float values.
+Load this data into appropriate data structure such that we can get all the temperatures for a given date, or we can easily compute the average temperature for a date etc.
+
+Try to use comprehension wherever possible ( if possible )
+
+-----------------------------------------------
+
+March 5 - 11 March
+
+--------------------------------------------------
+
+4) A text file contains about 15 lines of text. Some lines have 'Anurag' occurring in it.
+Write a comprehension that would build a list from this file containing only the lines that have 'Anurag'
+You have to make the text file yourself.
+
+5) We have two lists, one contains keys and other contains values. Create a dictionary by comprehension which picks the keys and values and creates dictionary entries.
+
+Observe the number of elements in Dictionary when one of these lists is shorter in size.
+
+6) We have the following lists:
+
+names1=['Anurag', 'Dileep', 'Ritu', 'Aneesh', 'Joseph', 'Swati']
+M1=[ 20,50,83,78,30,90 ]
+
+names2=['Saurabh', 'Arnab', 'Avinash', 'Ashish', 'Monika', 'Ritika']
+M2=[ 45,73,34,56,45,78]
+
+We have to find the name of the person who has got higher in M1 and M2
+So Anurag got 20 and Saurabh got 45, so we need the list to have Saurabh
+and so on.
+
+This should be attempted with as much comprehension as possible.
+
+Consider building a dictionary in most compact manner, containing name and mark
+
+BIO STUDENTS
+
+7) We have a file fastadb.txt that contains sequence data for several IDs.
+Load this information into a dictionary that is indexed by the sequence ID, and the value is the sequence itself.
+
+Try to use maximum amount of comprehension and any other techniques for compacting your code.
+DOWNLOAD THE FASTADB.TXT from MOODLE, it has been uploaded in this week itself.
