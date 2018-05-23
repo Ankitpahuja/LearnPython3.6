@@ -1,5 +1,4 @@
 with open("temp.txt","r") as temp:
-    temperature = []
     temperature = temp.readlines()
     count,summ = 0,0
     for a in temperature:
