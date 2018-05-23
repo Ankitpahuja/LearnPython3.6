@@ -9,8 +9,18 @@ class point:
         self.y+=a        
     def move_horizontal(self,a):
         self.x+=a
+    def seek_quad(self):
+        if self.x>0 and self.y>0:
+            print("1st Quadrant")
         
+        if self.x<0 and self.y>0:
+            print("2nd Quadrant")
         
+        if self.x<0 and self.y<0:
+            print("3rd Quadrant")
+            
+        if self.x>0 and self.y<0:
+            print("4th Quadrant Quadrant")
 
 # Main Program Proceeds
 p = point(10,20)
@@ -19,3 +29,4 @@ p.display()
 p.move_vertical(5)
 p.move_horizontal(5)
 p.display()
+p.seek_quad()
