@@ -1,0 +1,44 @@
+''' This includes all the functions, constants and exceptions relating to regex '''
+
+re.compile(pattern, flags=0) 
+# Saves the resulting regular expression object for reuse is more efficient when the expression will be used several times in a  single program.
+
+Flags with re.compile()
+re.A || re.ASCII
+re.DEBUG
+re.I || re.IGNORECASE
+re.L || re.LOCALE
+re.M || re.MULTILINE
+re.S || re.DOTALL
+re.X || re.VERBOSE
+
+re.search(pattern,string,flags=0)
+re.match(pattern,string,flags=0)
+# Look for difference between search() & match()
+re.fullmatch(pattern,string,flags=0)
+re.split(pattern,string,maxsplit=0, flags=0)
+re.findall(pattern,string,flags=0)
+re.finditer(pattern,strings,flags=0)
+re.sub(pattern,repl,string,count=0,flags=0)
+re.subn(pattern, repl,string, count=0, flags=0)
+re.escape(pattern)
+re.purge() : to clear the regular expression cache
+
+---------Regular Expression Objects ------------
+Compiled Regular Expression objects suport the following methods & attributes:
+
+Pattern.search(string[, pos[, endpos]])
+Pattern.match(string[, pos[, endpos]])
+Pattern.fullmatch(string[, pos[, endpos]])
+Pattern.split(string, maxsplit=0)
+Pattern.findall(string[, pos[, endpos]])
+Pattern.finditer(string[, pos[, endpos]])
+Pattern.sub(repl, string, count=0)
+Pattern.subn(repl, string, count=0)
+Pattern.flags
+Pattern.groups
+Pattern.groupindex
+Pattern.pattern
+
+-------- Operations on Match Object-------------
+match.gorup()

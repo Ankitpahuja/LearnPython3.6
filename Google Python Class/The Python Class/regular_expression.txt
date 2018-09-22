@@ -1,0 +1,50 @@
+------- Special Characters ---------------
+
+. (dot) any char
+\w word char
+\d digit
+\s whitespace 
+\S non-whitespace matter
++ 1 or more
+* 0 or more
+
+[] - set of multiple allowed characters
+() - Making groups for the parts that you care about
+
+-------- Advanced Characters --------------
+
+^ (Caret) Matches the start string and in MULTILINE mode also matches immediately after the new line.
+$ (Dollar) Matches the end of the string
+? (QMark) Causes the resulting RE to match 0 or 1 repetitions of the preeceding RE. ab? will either match a or ab.
+*?, *+, ??
+{m} (CBraces) Species that exactly m copies of the previous RE should be matched 
+{m,n}
+{m,n}?
+| (Pipe) RE's either A or B
+
+
+-------- Playing with (...) & Groups ---------
+
+(...)
+(?...)
+(?aiLmsux)
+(?:...)
+(?P<name>...)
+(?P=name)
+(?#...)
+(?=...)
+(?<!...)
+
+-------- Characters & Escaping Characters ---------
+
+\number
+\A
+\s
+\S
+\w
+\W
+\Z
+
+
+Note:
+- Look for differences between .(dot) - includes all character (space as well) and \w(doesn't include space)
